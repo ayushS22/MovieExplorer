@@ -1,16 +1,92 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **React.js** web application that allows users to **search, browse, and view detailed information** about movies using the **OMDb API** (The Open Movie Database).  
+This project demonstrates concepts of **React routing, state management, API integration, and reusable components**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🔍 **Search movies** by title using the OMDb API  
+- 🧭 **Browse trending movies** (default search: *Avengers*)  
+- 📄 **View detailed movie information** including title, poster, genre, release date, and plot  
+- 🧩 **Modular component structure** for scalability  
+- 🛣️ **Routing using React Router v6**  
+- ⚡ **Responsive and fast UI**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** – Frontend library  
+- **React Router DOM** – For client-side routing  
+- **OMDb API** – Public movie data API  
+- **CSS** – Styling components  
+
+---
+
+## 🗂️ Folder Structure
+
+movie-explorer/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── MovieCard.jsx
+│ │ └── MovieList.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ └── MovieDetail.jsx
+│ ├── App.jsx
+│ ├── App.css
+│ └── main.jsx
+├── package.json
+└── README.md
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone this repository**
+
+   ```bash
+   git clone https://github.com/your-username/movie-explorer.git
+
+
+Navigate to the project directory
+cd movie-explorer
+
+Install dependencies
+npm install
+
+Start the development server
+npm run dev
+
+API Configuration
+
+This project uses the OMDb API.
+You can use the included demo API key (6d50cdca) or get your own key here
+.
+
+Example API calls:
+
+Search movies:
+http://www.omdbapi.com/?apikey=6d50cdca&s=Avengers
+
+Get movie details:
+http://www.omdbapi.com/?apikey=6d50cdca&i=tt0848228
+
+Screenshots
+🏠 Home Page
+
+Displays a list of movies with a search bar.
+
+🎥 Movie Detail Page
+
+Shows detailed info such as poster, genre, release date, and plot.
+
+
+
